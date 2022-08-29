@@ -23,6 +23,12 @@ public class LocationController {
 	public String showLocationPage() {
 		return "create_Location";
 	}
+	
+	@GetMapping("/show0")
+	public String show() {
+		return "index";
+	}
+	
 	@RequestMapping("/saveLocation")
 	public String saveLocation(@ModelAttribute Location location,ModelMap model) {
 		locationService.saveLocation(location);
