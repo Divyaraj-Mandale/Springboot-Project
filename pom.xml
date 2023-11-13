@@ -61,6 +61,8 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<packaging>war</packaging>
+				<finalName>devops_integration</finalName>
 			</plugin>
 		</plugins>
 	</build>
